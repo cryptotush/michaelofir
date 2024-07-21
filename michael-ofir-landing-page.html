@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מיכאל אופיר - מורה לגיטרה ומוזיקה</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: 'Alef', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            padding: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .intro {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .service-item {
+            text-align: center;
+            margin: 20px;
+            flex-basis: calc(33.333% - 40px);
+        }
+        .service-icon {
+            font-size: 48px;
+            color: #3498db;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            margin-right: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #3498db;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .right {
+            right: 50%;
+        }
+        .right::after {
+            right: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="michael-playing-guitar.jpg" alt="מיכאל אופיר מנגן בגיטרה חשמלית" class="hero-image">
+        <img src="mo-logo.png" alt="לוגו MO" class="logo">
+    </header>
+
+    <div class="container">
+        <h1>מיכאל אופיר - מורה לגיטרה ומוזיקה</h1>
+        
+        <div class="intro">
+            <h2>נעים להכיר</h2>
+            <p>שלום, אני מיכאל אופיר, מורה לגיטרה ומוזיקה בעל ניסיון של למעלה מעשור בהוראה. המסע המוזיקלי שלי החל בגיל צעיר, וכיום אני מתרגש להעביר את האהבה והידע שלי לתלמידיי. אני מאמין שכל אחד יכול ללמוד לנגן, ומשתדל להתאים את שיטת הלימוד לסגנון ולקצב האישי של כל תלמיד. בין אם אתם מתחילים את צעדיכם הראשונים בעולם המוזיקה או מעוניינים לשפר את יכולותיכם, אני כאן כדי ללוות אתכם בדרך להגשמת החלומות המוזיקליים שלכם.</p>
+        </div>
+        
+        <section class="services">
+            <div class="service-item">
+                <i class="fas fa-home service-icon"></i>
+                <h3>שיעורים בבית המורה</h3>
+                <p>למידה באווירה נעימה ומקצועית</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-map-marked-alt service-icon"></i>
+                <h3>שיעורים בבית התלמיד</h3>
+                <p>באזור תל אביב, רמת גן, וגבעתיים</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-music service-icon"></i>
+                <h3>לימודי מוזיקה מקיפים</h3>
+                <p>מתיאוריה ועד ביצוע</p>
+            </div>
+        </section>
+
+        <h2>המסע המוזיקלי שלך</h2>
+        <div class="timeline">
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>צעדים ראשונים</h3>
+                    <p>היכרות עם הגיטרה ולמידת אקורדים בסיסיים</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>בניית יסודות</h3>
+                    <p>פיתוח טכניקה ולימוד תיאוריה מוזיקלית</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>גילוי הסגנון האישי</h3>
+                    <p>חקירת ז'אנרים שונים ופיתוח טעם מוזיקלי</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>ביצוע והקלטה</h3>
+                    <p>למידת טכניקות הקלטה והופעה מול קהל</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>צור קשר</h2>
+        <p>להתחלת המסע המוזיקלי שלך, צור איתי קשר:</p>
+        <p>טלפון: 050-6596893</p>
+        <p>אימייל: mikeofir@gmail.com</p>
+        <a href="mailto:mikeofir@gmail.com" class="cta-button">שלח הודעה</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 מיכאל אופיר - כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
